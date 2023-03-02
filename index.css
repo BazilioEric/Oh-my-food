@@ -1,0 +1,174 @@
+/* BODY */
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.localisation{
+    width: 100%;
+    background-color: rgb(205, 203, 203);
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.localisation p:first-child{
+    padding-right: 1rem;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(227, 222, 222);
+    width: 100%;
+    font-size: 40px ;
+    padding: 5rem 0 5rem 0;
+}
+
+.presentation p, 
+.presentation h1{
+    padding: 0 5rem 0 5rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.presentation button{
+    width: 30rem;
+    height: 7rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    font-size: 35px;
+    color: white;
+    background: linear-gradient(to bottom,rgb(244, 84, 244), rgb(161, 26, 161));
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+nav h1, main h1{
+    margin-top: 5rem;
+    margin-left: 4rem;
+    font-size: 60px;
+}
+
+nav button{
+    display: flex;
+    border-radius: 50px;
+    margin: 1rem auto 1rem auto;
+    width: 88%;
+}
+
+nav p{
+    margin-right: 5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    font-size: 30px;
+}
+
+nav p:first-child{
+    background: rgb(166, 15, 166);
+    border-radius: 20px;
+}
+
+/* MAIN */
+
+main{
+    background-color: rgb(188, 186, 186);
+}
+
+figure{
+    background-color: white;
+    border-radius: 20px;
+    height: 35rem;
+    width: 55rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+
+figure:nth-child(4){
+    margin-bottom: 5rem;
+}
+
+main img{
+    width: 100%;
+    height: 78%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+main p, main h2{
+    margin: 0 2rem 1rem 3rem;
+}
+
+main input, main label{
+    float: right;
+}
+
+main input[type="checkbox"].heart1{
+    display: none;
+}
+
+main input[type="checkbox"].heart1 + label::before{
+    font-family: "fa-regular fa-heart";
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(40, 39, 39);
+    color: white;
+    font-size: 40px;
+}
+
+footer li:first-child{
+    margin-bottom: 2rem;
+}
+footer p{
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 4rem;
+}
+
+footer img{
+    color: white;
+}
+
+footer .proposer, footer .devenir{
+    display: flex;
+}
+
+.proposer p:first-child, .devenir p:first-child{
+    padding-right: 1rem;
+}
+
+footer li:first-child{
+    font-family: 'Shrikhand', cursive;
+    font-size: 50px;
+}
