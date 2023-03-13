@@ -3,7 +3,8 @@
 body{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER */
@@ -12,19 +13,29 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-header img{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+header h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .localisation{
     width: 100%;
-    background-color: rgb(205, 203, 203);
+    background-color: #EAEAEA;
     display: flex;
     justify-content: center;
-    font-size: 45px;
+    font-size: 16px;
+    box-shadow: inset 0px 2px 3px 1px #DDDDDD;
 }
 
 .localisation p:first-child{
@@ -36,79 +47,116 @@ header img{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgb(227, 222, 222);
+    background-color: #F7F7F7;
     width: 100%;
-    font-size: 40px ;
-    padding: 5rem 0 5rem 0;
+    font-size: 17px ;
+    padding: 2rem 0 2rem 0;
+}
+
+.presentation p{
+    font-size: 17px;
 }
 
 .presentation p, 
-.presentation h1{
-    padding: 0 5rem 0 5rem;
-    margin: 1rem 0 1rem 0;
+.presentation h2{
+    padding: 0.5rem 3rem 0.5rem 4rem;
+    margin: 0;
 }
 
 .presentation button{
-    width: 30rem;
-    height: 7rem;
+    width: 13rem;
+    height: 3rem;
     border-radius: 50px;
-    margin-top: 2rem;
-    font-size: 35px;
+    margin: 0.7rem 0 1.5rem 0;
+    font-size: 15px;
     color: white;
     background: linear-gradient(to bottom,rgb(244, 84, 244), rgb(161, 26, 161));
 }
 
+button{
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
+}
 /* NAV */
 
 nav{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
+    margin: 2rem 0 3rem 0;
 }
 
-nav h1, main h1{
-    margin-top: 5rem;
-    margin-left: 4rem;
-    font-size: 60px;
+nav h2, main h2{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-size: 22px;
 }
 
 nav button{
     display: flex;
-    border-radius: 50px;
+    border-radius: 15px;
     margin: 1rem auto 1rem auto;
-    width: 88%;
+    width: 23rem;
+    height: 4rem;
+    align-items: center;
+    padding: 0;
+    background-color: #F7F7F7;
 }
 
 nav p{
-    margin-right: 5rem;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-    font-size: 30px;
+    margin-right: 2rem;
 }
 
-nav p:first-child{
-    background: rgb(166, 15, 166);
-    border-radius: 20px;
+button p:nth-child(3){
+    font-size: 14px;
+    font-weight: bold;
 }
+
+.fa-mobile-screen-button, .fa-list-ul, .fa-store{
+    font-size: large;
+    color: gray;
+}
+
+button p:first-child{
+    height: 1rem;
+    width: 1rem;
+    background: #9050DB;
+    border-radius: 50% 50% 50% 50%;
+    color: white;
+    padding-top: 0.3rem;
+    font-size: 12px;
+}
+
+nav button:hover{
+    background-color: #F5EDFF;
+}  
+
+nav button:hover i{
+    color: #8D4DDA;
+}
+
+
 
 /* MAIN */
 
 main{
-    background-color: rgb(188, 186, 186);
+    background-color: #F7F7F7;
+    padding: 2rem 0 1rem 0;
 }
 
 figure{
     background-color: white;
     border-radius: 20px;
-    height: 35rem;
-    width: 55rem;
+    height: 13rem;
+    width: 23rem;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 30px;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
 }
 
 figure:nth-child(4){
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 main img{
@@ -118,46 +166,59 @@ main img{
     object-fit: cover;
 }
 
-main p, main h2{
-    margin: 0 2rem 1rem 3rem;
+main p, main h3{
+    margin: 0 1rem 0 1rem;
 }
 
-main input, main label{
+main h3{
+    font-size: 17px;
+}
+
+main p{
+    font-size: 15px;
+}
+
+main p:first-child{
+    position: absolute;
+    margin: 1rem 0 0 17rem;
+    background-color: #99E2D0;
+    color: #4DB59B;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.fa-regular, .fa-heart{
     float: right;
+    line-height: -1;
+    font-size: 20px;
 }
 
-main input[type="checkbox"].heart1{
-    display: none;
+figure .fa-solid{
+    color: violet;
 }
 
-main input[type="checkbox"].heart1 + label::before{
-    font-family: "fa-regular fa-heart";
+main a{
+    text-decoration: none;
+    color: black;
 }
+
 
 
 
 /* FOOTER */
 
 footer{
-    background-color: rgb(40, 39, 39);
+    background-color: #353535;
     color: white;
-    font-size: 40px;
+    font-size: 13px;
 }
 
-footer li:first-child{
-    margin-bottom: 2rem;
-}
 footer p{
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.2rem 0 0.2rem 0;
 }
 
 footer ul{
     list-style-type: none;
-    padding-left: 4rem;
-}
-
-footer img{
-    color: white;
 }
 
 footer .proposer, footer .devenir{
@@ -165,10 +226,80 @@ footer .proposer, footer .devenir{
 }
 
 .proposer p:first-child, .devenir p:first-child{
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
-footer li:first-child{
+footer h4{
     font-family: 'Shrikhand', cursive;
-    font-size: 50px;
+    font-size: 14px;
+    margin-bottom: 0.8rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 390px) {
+
+   nav button{
+    width: 90%;
+   }
+
+   main figure{
+    width: 90%;
+   }
+
+   main p:first-child{
+    margin: 1rem 0 0 12rem;
+   }
+}
+
+
+@media screen and (min-width: 500px){
+
+    .container--button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav button{
+        width: 25%;
+        margin: 0.7rem 0.7rem 0.7rem 0.7rem;
+    }
+
+    nav p{
+        margin-right: 0.7rem;
+    }
+
+    button p:nth-child(3){
+        font-size: 10px;
+    }
+
+    button p:first-child {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding-top: 0.4rem;
+    }
+
+    .bloc-cartes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main figure{
+        width: 65vh;
+        margin: 0.7rem 0.7rem 0.7rem 0.7rem;
+    }
+
+    main p:first-child{
+        margin: 1rem 0 0 5rem;
+       }
+
+       nav h2, main h2{
+        text-align: center;
+        }  
+    }        
+
+@media screen and (min-width: 781px){
+
 }
