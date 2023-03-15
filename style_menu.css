@@ -74,12 +74,11 @@ figure{
 }
 
 figure{
-    animation-duration: 1s;
-    animation-name: slidebottom;
-    animation-timing-function: ease-in-out;
+    overflow: hidden;
+    animation: slide 1s ease-in-out
 }
 
-@keyframes slidebottom{
+@keyframes slide{
     
     from {
         transform: translateY(-10vh);
@@ -115,7 +114,6 @@ main p{
 .valid{
     display: flex;
     background-color: #99e2d0;
-    /* float: right; */
     width: 10%;
     height: 100%;
     justify-content: center;
@@ -123,13 +121,21 @@ main p{
     border-radius: 0px 10px 10px 0;
     margin-right: -2.5rem;
     margin-left: 1em;
-    /* visibility: hidden; */
-    transition-duration: 1500ms;
+    animation: check 2s ease-in-out forwards;
 }
 
-.valid i:hover{
-    transform: translate(8rem) rotate(360deg);
-    visibility: visible;
+@keyframes check{
+    0%{transform: translate(0rem);}
+    100%{transform: translate(-2.5rem);}
+}
+
+.valid i{
+    animation: turn 0.5s linear 4;
+}
+
+@keyframes turn{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(1turn);}
 }
 
 main button{
@@ -176,3 +182,15 @@ footer li:first-child{
     margin-bottom: 0.7rem;
 }
 
+
+@media screen and (min-width: 500px){
+    main figure{
+        width: 80%;
+    }
+} 
+
+@media screen and (min-width: 1024px){
+    main{
+        flex-direction: row;
+    }
+}
