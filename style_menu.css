@@ -70,9 +70,6 @@ figure{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0.1em 0.1em 0.5em black;
-}
-
-figure{
     overflow: hidden;
     animation: slide 1s ease-in-out
 }
@@ -120,7 +117,6 @@ main p{
     border-radius: 0px 10px 10px 0;
     margin-right: -2.5rem;
     margin-left: 1em;
-    /* animation: check 2s ease-in-out forwards; */
     transition: transform 2s ease-in-out;
 }
 
@@ -130,18 +126,13 @@ figure:hover .valid{
 
 
 .valid i{
-    transition: transform 0.5s linear 4;
-    /* transform: rotate(360deg); */
+    transition: transform 2s ease-in-out;
 }
 
-/* figure:hover .valid i{
-    transform: rotate(0turn);
-} */
-
-@keyframes turn{
-    0%{transform: rotate(0);}
-    100%{transform: rotate(1turn);}
+figure:hover i{
+    transform: rotate(1440deg);
 }
+
 
 main button{
     width: 13rem;
