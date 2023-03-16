@@ -62,7 +62,6 @@ h3{
 
 figure{
     display: flex;
-    /* flex-direction: column; */
     background-color: white;
     width: 24rem;
     height: 4rem;
@@ -121,17 +120,23 @@ main p{
     border-radius: 0px 10px 10px 0;
     margin-right: -2.5rem;
     margin-left: 1em;
-    animation: check 2s ease-in-out forwards;
+    /* animation: check 2s ease-in-out forwards; */
+    transition: transform 2s ease-in-out;
 }
 
-@keyframes check{
-    0%{transform: translate(0rem);}
-    100%{transform: translate(-2.5rem);}
+figure:hover .valid{
+    transform: translate(-2.5rem);
 }
+
 
 .valid i{
-    animation: turn 0.5s linear 4;
+    transition: transform 0.5s linear 4;
+    /* transform: rotate(360deg); */
 }
+
+/* figure:hover .valid i{
+    transform: rotate(0turn);
+} */
 
 @keyframes turn{
     0%{transform: rotate(0);}
