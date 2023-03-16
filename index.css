@@ -306,7 +306,7 @@ footer h4{
 }
 
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 590px){
 
     .container--button{
         display: flex;
@@ -354,8 +354,8 @@ footer h4{
         }  
     }  
     
-/* 
-    @media screen and (min-width:1023px){ */
+
+    @media screen and (min-width:1023px){
         footer ul{
             display: flex;
             flex-direction: row;
@@ -366,7 +366,7 @@ footer h4{
         footer h4{
             margin: 0;
             font-size: 25px;
-
         }
+    }
     
     
