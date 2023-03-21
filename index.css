@@ -242,7 +242,6 @@ main p:first-child{
 
 .fa-regular, .fa-heart{
     float: right;
-    line-height: -1;
     font-size: 20px;
 }
 
