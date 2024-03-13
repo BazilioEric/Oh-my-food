@@ -1,5 +1,7 @@
-# Oh-my-food / Projet 3 du parcours Développeur Web et Web Mobile : 
-## Dynamisez un site web avec des animations CSS!
+# Oh-my-food / 
+## Dynamisez un site web avec des animations CSS
+
+J'ai réalisé ce projet dans le cadre de ma formation de développeur web et web mobile.
 
 ### Objectifs attendus :
 - Développer un site proposant le menu de 4 grands restaurants parisiens
